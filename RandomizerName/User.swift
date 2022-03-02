@@ -15,6 +15,4 @@ struct User: Identifiable, Codable {
         self.name = name
         self.id = id
     }
-    
-    static let sample = [User(name: "Ryan"), User(name: "Mandy"), User(name: "Ryan E"), User(name: "Britany")]
 }
