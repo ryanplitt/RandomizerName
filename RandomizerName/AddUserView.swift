@@ -15,7 +15,7 @@ struct AddUserView: View {
     var body: some View {
         NavigationView {
                 VStack(spacing: 50) {
-                    TextField("Name", text: $name)
+                    TextField("New User Name", text: $name)
                     Button("Done") {
                         viewModel.add(userWithName: name)
                         dismiss()
