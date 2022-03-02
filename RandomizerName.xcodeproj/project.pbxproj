@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CFE9C38C27CFB91E003EDB83 /* RandomizerNameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C38B27CFB91E003EDB83 /* RandomizerNameApp.swift */; };
-		CFE9C38E27CFB91E003EDB83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C38D27CFB91E003EDB83 /* ContentView.swift */; };
 		CFE9C39027CFB91F003EDB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE9C38F27CFB91F003EDB83 /* Assets.xcassets */; };
 		CFE9C39327CFB91F003EDB83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE9C39227CFB91F003EDB83 /* Preview Assets.xcassets */; };
 		CFE9C39D27CFB91F003EDB83 /* RandomizerNameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C39C27CFB91F003EDB83 /* RandomizerNameTests.swift */; };
 		CFE9C3A727CFB91F003EDB83 /* RandomizerNameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3A627CFB91F003EDB83 /* RandomizerNameUITests.swift */; };
 		CFE9C3A927CFB91F003EDB83 /* RandomizerNameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3A827CFB91F003EDB83 /* RandomizerNameUITestsLaunchTests.swift */; };
+		CFE9C3B627CFB969003EDB83 /* NamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3B527CFB969003EDB83 /* NamesView.swift */; };
+		CFE9C3B827CFBB90003EDB83 /* NamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3B727CFBB90003EDB83 /* NamesViewModel.swift */; };
+		CFE9C3BA27CFBC1A003EDB83 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3B927CFBC1A003EDB83 /* User.swift */; };
+		CFE9C3BC27CFC9A5003EDB83 /* AddUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE9C3BB27CFC9A5003EDB83 /* AddUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		CFE9C38827CFB91D003EDB83 /* RandomizerName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomizerName.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE9C38B27CFB91E003EDB83 /* RandomizerNameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerNameApp.swift; sourceTree = "<group>"; };
-		CFE9C38D27CFB91E003EDB83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFE9C38F27CFB91F003EDB83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFE9C39227CFB91F003EDB83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CFE9C39827CFB91F003EDB83 /* RandomizerNameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomizerNameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		CFE9C3A227CFB91F003EDB83 /* RandomizerNameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomizerNameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE9C3A627CFB91F003EDB83 /* RandomizerNameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerNameUITests.swift; sourceTree = "<group>"; };
 		CFE9C3A827CFB91F003EDB83 /* RandomizerNameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerNameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFE9C3B527CFB969003EDB83 /* NamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesView.swift; sourceTree = "<group>"; };
+		CFE9C3B727CFBB90003EDB83 /* NamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewModel.swift; sourceTree = "<group>"; };
+		CFE9C3B927CFBC1A003EDB83 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CFE9C3BB27CFC9A5003EDB83 /* AddUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				CFE9C38B27CFB91E003EDB83 /* RandomizerNameApp.swift */,
-				CFE9C38D27CFB91E003EDB83 /* ContentView.swift */,
+				CFE9C3B527CFB969003EDB83 /* NamesView.swift */,
+				CFE9C3B927CFBC1A003EDB83 /* User.swift */,
+				CFE9C3B727CFBB90003EDB83 /* NamesViewModel.swift */,
+				CFE9C3BB27CFC9A5003EDB83 /* AddUserView.swift */,
 				CFE9C38F27CFB91F003EDB83 /* Assets.xcassets */,
 				CFE9C39127CFB91F003EDB83 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE9C38E27CFB91E003EDB83 /* ContentView.swift in Sources */,
+				CFE9C3BA27CFBC1A003EDB83 /* User.swift in Sources */,
 				CFE9C38C27CFB91E003EDB83 /* RandomizerNameApp.swift in Sources */,
+				CFE9C3BC27CFC9A5003EDB83 /* AddUserView.swift in Sources */,
+				CFE9C3B627CFB969003EDB83 /* NamesView.swift in Sources */,
+				CFE9C3B827CFBB90003EDB83 /* NamesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

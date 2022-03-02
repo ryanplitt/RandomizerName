@@ -11,7 +11,8 @@ import SwiftUI
 struct RandomizerNameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NamesView()
+                .environmentObject(NamesViewModel())
         }
     }
 }
