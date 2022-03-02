@@ -13,7 +13,7 @@ class NamesViewModel: ObservableObject {
             save(users: names)
         }
     }
-    private(set) var randomUser: User?
+    private(set) var randomUsers: [User] = []
     
     init() {
         load { [weak self] result in
@@ -23,8 +23,8 @@ class NamesViewModel: ObservableObject {
         }
     }
     
-    func selectRandomUser() {
-        randomUser = names.randomElement()
+    func selectRandomUsers(numberOfUsers n: Int) {
+        randomUsers = Array<User>(names.shuffled().prefix(n))
     }
     
     func add(userWithName name: String) {

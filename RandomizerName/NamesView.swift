@@ -11,15 +11,30 @@ struct NamesView: View {
     @EnvironmentObject var viewModel: NamesViewModel
     @State var presentRandomName: Bool = false
     @State var presentAddUser: Bool = false
+    @State var numberOfSelected = 1
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 8) {
                 List(viewModel.names) { user in
                     Text(user.name)
                 }
+                HStack {
+                    Text("Number Of Selected:")
+                    Spacer()
+                    Stepper(String(numberOfSelected)) {
+                        if numberOfSelected < viewModel.names.count {
+                            numberOfSelected += 1
+                        }
+                    } onDecrement: {
+                        if numberOfSelected > 1 {
+                            numberOfSelected -= 1
+                        }
+                    }
+                }
+                .padding()
                 Button {
-                    viewModel.selectRandomUser()
+                    viewModel.selectRandomUsers(numberOfUsers: numberOfSelected)
                     presentRandomName = true
                 } label: {
                     Text("Select Random User")
@@ -38,7 +53,7 @@ struct NamesView: View {
         .sheet(isPresented: $presentAddUser, onDismiss: nil, content: {
             AddUserView()
         })
-        .alert(viewModel.randomUser?.name ?? "Uh Oh", isPresented: $presentRandomName) {
+        .alert(viewModel.randomUsers.map({ $0.name }).joined(separator: ", "), isPresented: $presentRandomName) {
             Button("Ok", role: .cancel) {}
         }
     }
